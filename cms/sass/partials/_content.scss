@@ -1,0 +1,85 @@
+
+// containers
+#container { width: auto !important; min-width: auto !important; }
+#content { width: auto !important; min-width: auto !important; }
+
+// module
+.module {
+	@include box(); margin-bottom: 10px; padding: 15px 20px 20px;
+	h2 { background: none; border-bottom: 1px solid $line-color-light; color: $font-color; font-size: 100%;
+		margin-bottom: 2px;	margin-top: 0; padding: 10px; }
+	caption {
+		background: none; color: $font-color-light; font-size: 130%; font-weight: bold;
+		line-height: 1.75em; margin-bottom: 10px; padding: 0;
+		a.section, a.section:link, a.section:visited { color: $font-color-light; }
+	}
+	table {
+		margin: 0;
+		td { padding: 10px 5px; }
+	}
+}
+
+// login
+body.login {
+	background: $background-color-ultralight url('../images/bg-pattern.jpg') repeat !important;
+	#container {
+		@include box(); border: none; width: 340px !important;
+		@include box-shadow(rgba(0, 0, 0, 0.3) 0px 1px 2px, #fff 0px 1px 1px inset);
+		#header {
+			background: none !important;
+			#branding h1 { color: $font-color; margin: 20px 0 !important; text-align: center; }
+		}
+		#content {
+			margin: 0 !important;
+			padding: 25px 40px !important;
+			#content-main {
+				form { margin-top: 0 !important; }
+				.form-row {
+					label { font-weight: normal; }
+					input { font-size: 16px; padding: 0 10px; height: 40px; width: 240px !important; }
+				}
+				.submit-row {
+					border: none; background: none; padding: 20px 0 0 0;
+					input, input[type="submit"] { background-image: none; @include button-blue();
+						width: 262px !important; }
+					label { display: none; }
+				}
+			}
+		}
+		#footer { display: none; }
+	}
+}
+
+// header
+#header {
+	@include pie;
+	@include background-image(linear-gradient($background-color-dark, $background-color-medium));
+	background-color: $background-color-dark; color: $font-color-white !important; height: 46px;
+	#branding h1 { color: $font-color-white; padding: 3px 25px; }
+	#user-tools { padding: 16px 25px 0; }
+}
+div.breadcrumbs { background: $line-color-dark; border-top: 1px solid $line-color-dark;
+	color: $font-color-ultralight; padding-left: 25px;
+	a {
+		color: $font-color-light;
+		&:hover { color: $font-color-ultralight; text-decoration: none; }
+	}
+}
+
+// dashboard
+.dashboard #container {
+	#content-main {
+		min-width: 320px; max-width: 640px;
+	}
+	#content-related {
+		float: left;
+		.module { @include border-radius(); border: 1px solid $line-color-light; margin-left: 10px;
+			@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
+			background: $background-color-transparent !important; padding: 10px 20px !important;
+			ul.actionlist { padding: 0; }
+			h2 { background: none; color: $font-color-light; padding: 0 0 5px 0; }
+			h3 { border-bottom: 1px solid $line-color-light; line-height: 20px; margin: 0 0 5px 0; padding: 0; }
+			p { padding: 0; }
+		}
+	}
+}
