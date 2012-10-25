@@ -595,56 +595,8 @@ a[id^="calendarlink"] img, a[id^="clocklink"] img {
   display: none;
 }
 
-/* Shortcuts */
-/* line 92, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a {
-  background: none !important;
-  padding-left: 10px;
-}
-/* line 95, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a:hover {
-  text-decoration: none !important;
-}
-
-/* line 101, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a:before {
-  font-family: 'django-admin-icons';
-  font-style: normal;
-  speak: none;
-  font-weight: normal;
-  font-size: 200%;
-  -webkit-font-smoothing: antialiased;
-  padding-right: 5px;
-  vertical-align: middle;
-}
-
-/* line 112, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a.pages:before {
-  content: "\27";
-}
-
-/* line 113, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a.home:before {
-  content: "\28";
-}
-
-/* line 114, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a.user:before {
-  content: "\29";
-}
-
-/* line 115, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a.files:before {
-  content: "\2a";
-}
-
-/* line 116, ../../../sass/partials/_icons.scss */
-.admin_shortcuts .shortcuts li a.contact:before {
-  content: "\2b";
-}
-
 /* Sepcials */
-/* line 119, ../../../sass/partials/_icons.scss */
+/* line 92, ../../../sass/partials/_icons.scss */
 .selector ul.selector-chooser {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1875,32 +1827,36 @@ a.addlink:hover, a.addlink:focus, a.addlink:active {
 }
 
 /* line 2, ../../../sass/partials/_shortcuts.scss */
-div.admin_shortcuts .shortcuts {
+.admin_shortcuts .shortcuts {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
   box-shadow: none;
   background: #595f65;
   border-top: 1px solid #444444;
   color: #cccccc;
 }
+/* line 5, ../../../sass/partials/_shortcuts.scss */
+.admin_shortcuts .shortcuts h2 {
+  border: none;
+  font-weight: normal;
+}
 /* line 7, ../../../sass/partials/_shortcuts.scss */
-div.admin_shortcuts .shortcuts h2 {
-  border-bottom: 1px solid #444444;
-}
-/* line 11, ../../../sass/partials/_shortcuts.scss */
-div.admin_shortcuts .shortcuts li a {
-  background: #464b50 10px 50% no-repeat;
+.admin_shortcuts .shortcuts li a {
+  background-color: #464b50;
   border: 1px solid #444444;
-  padding: 20px 10px 20px 15px;
+  text-decoration: none;
 }
-/* line 15, ../../../sass/partials/_shortcuts.scss */
-div.admin_shortcuts .shortcuts li a:hover {
-  background-color: #595f65;
+/* line 9, ../../../sass/partials/_shortcuts.scss */
+.admin_shortcuts .shortcuts li a:hover {
+  background-color: #4e5359;
 }
-/* line 18, ../../../sass/partials/_shortcuts.scss */
-div.admin_shortcuts .shortcuts li a .count {
+/* line 10, ../../../sass/partials/_shortcuts.scss */
+.admin_shortcuts .shortcuts li a .count {
   color: #888888;
 }
-/* line 21, ../../../sass/partials/_shortcuts.scss */
-div.admin_shortcuts .shortcuts li a .count_new {
+/* line 11, ../../../sass/partials/_shortcuts.scss */
+.admin_shortcuts .shortcuts li a .count_new {
   background: #029eee;
   border-color: #5bbdee;
 }
