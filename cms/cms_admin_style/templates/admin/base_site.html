@@ -7,10 +7,10 @@
 {% include 'admin/extrastyle.html' %}
 {% endblock %}
 
-{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+{% block title %}{% include 'admin/page_title.html' %}{% endblock %}
 
 {% block branding %}
-<h1 id="site-name">{% trans 'Django administration' %}</h1>
+<h1 id="site-name">{% include 'admin/site_name.html' %}</h1>
 {% endblock %}
 
 {% block nav-global %}{% endblock %}
