@@ -71,6 +71,7 @@ def configure(**extra):
             'django.contrib.sites',
             'django.contrib.staticfiles',
             'cms',
+            'cms.cms_admin_style',
             'menus',
             'mptt',
             'django.contrib.admin',
