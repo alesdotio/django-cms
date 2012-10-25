@@ -64,6 +64,7 @@ div.calendar {
 }
 div.calendarbox {
 	width: 200px !important;
+	table th, table td { line-height: 12px; }
 	.calendarnav-previous, .calendarnav-next {
 		background: none; color: white; text-decoration: none; padding: 4px 7px 7px;
 		&:hover, &:focus { background: #666; }
@@ -80,6 +81,9 @@ div.clockbox {
 	h2 { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
 		background-color: $background-color-dark; color: $font-color-white !important;
 		@include border-top-radius(); }
+}
+.timelist a {
+	&, &:active, &:focus, &:hover { background: none !important; }
 }
 
 span.datetimeshortcuts a { color: $link-color; }

@@ -16,73 +16,42 @@
 	}
 	table {
 		margin: 0;
-		td { padding: 10px 5px; }
+		th { padding: 0 5px !important; line-height: 22px; }
+		td { padding: 5px 5px; line-height: 22px; }
 	}
 }
 
 #content-main {
 	.inline-group {
-		@include border-radius();
+		@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
 		@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
-		border: 1px solid $line-color-light;
 		background: $background-color-transparent !important;
-		padding: 10px;
-		h2 {
-			background: none !important;
-			color: $font-color;
-			font-size: 100%;
-			margin-bottom: 10px;
-			padding: 0 10px 8px 0px;
-		}
-		div.add-row {
-			background: none !important;
-			border-bottom: 0 !important;
-		}
-		.form-row {
-			border-bottom: none !important;
-		}
+		h2 { background: none !important; color: $font-color; font-size: 100%; margin-bottom: 10px;
+			padding: 0 10px 8px 0px; }
+		div.add-row { background: none !important; border-bottom: 0 !important; }
+		.form-row { border-bottom: none !important; }
 	}
 
 	.inline-related {
-		h3 {
-			background: none;
-			border-bottom: none;
-		}
+		h3 { background: none; border-bottom: none; }
 	}
 
 	.submit-row {
-		@include border-radius();
+		@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
 		@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
-		border: 1px solid $line-color-light;
+		background: $background-color-light;
 		background: $background-color-transparent !important;
-		padding: 10px;
-		.deletelink-box {
-			margin: 0.5em 0 !important;
-		}
+		.deletelink-box { margin: 0.5em 0 !important; }
 	}
 	.selector {
 		.selector-available, .selector-chosen {
-			@include border-radius();
-			border: 1px solid $line-color-light;
-			h2 {
-				color: $font-color !important;
-				background: none !important;
-				border: none;
-				margin-bottom: 0;
-			}
-			input {
-				width: 252px;
-			}
+			@include border-radius(); border: 1px solid $line-color-light;
+			h2 { color: $font-color !important; background: none !important; border: none; margin-bottom: 0; }
+			input { width: 252px; }
 		}
-		.selector-filter {
-			border: none;
-		}
-		select[multiple] {
-			border: 1px solid $line-color-light;
-			border-left: none;
-			border-right: none;
-			margin-bottom: 0;
-		}
+		.selector-filter { border: none; }
+		select[multiple] { border: 1px solid $line-color-light; border-left: none; border-right: none;
+			margin-bottom: 0; }
 	}
 }
 
@@ -102,7 +71,7 @@ body.login {
 				form { margin-top: 0 !important; }
 				.form-row {
 					label { font-weight: normal; }
-					input { font-size: 16px; padding: 0 10px; height: 40px; width: 240px !important; }
+					input { font-size: 16px; padding: 10px; width: 240px !important; }
 				}
 				.submit-row {
 					border: none; background: none; padding: 20px 0 0 0;
@@ -135,6 +104,7 @@ div.breadcrumbs { background: $line-color-dark; border-top: 1px solid $line-colo
 .dashboard #container {
 	#content-main {
 		min-width: 320px; max-width: 640px;
+		table th, table td { line-height: 30px; }
 	}
 	#content-related {
 		float: left;
