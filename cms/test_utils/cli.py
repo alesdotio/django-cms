@@ -73,7 +73,6 @@ def configure(**extra):
             'cms',
             'menus',
             'mptt',
-            #'admin_shortcuts',
             'django.contrib.admin',
             'cms.plugins.text',
             'cms.plugins.picture',
