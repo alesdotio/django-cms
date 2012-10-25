@@ -35,18 +35,15 @@ $pie-base-class: pie-element;
 // and add more as needed (i.e. forms, tables, nav)
 @import "partials/_mixins.scss";
 @import "partials/_base.scss";
-@import "partials/_content.scss";
+@import "partials/_icons.scss";
 @import "partials/_forms.scss";
+@import "partials/_tables.scss";
+@import "partials/_content.scss";
 
 @import "partials/_shortcuts.scss";
 
 // TODO:
-@import "partials/_djangocms.scss";
-@import "partials/_form.scss";
-@import "partials/_icons.scss";
 @import "partials/_messages.scss";
-@import "partials/_page.scss";
-@import "partials/_table.scss";
 
 
 // Media should come last

@@ -26,6 +26,7 @@
 	color: $button-silver-font-color !important;
 	font-weight: bolder !important;
 	font-size: 12px !important;
+	line-height: 15px !important;
 	overflow: visible;
 	padding: 5px 10px 5px !important;
 	text-decoration: none !important;
@@ -67,8 +68,9 @@
 
 @mixin button-green {
 	@include pie;
-	@include background-image(linear-gradient($button-green-light-color, $button-green-medium-color) !important);
-	@include box-shadow($button-green-light-color 0 0$button-shadow-width inset !important);
+	&, &:visited {
+		@include background-image(linear-gradient($button-green-light-color, $button-green-medium-color) !important); }
+	@include box-shadow($button-green-light-color 0 0 $button-shadow-width inset !important);
 	background-color: $button-green-medium-color !important;
 	border: 1px solid $button-green-light-color !important;
 	border-bottom: 1px solid $button-green-dark-color !important;
