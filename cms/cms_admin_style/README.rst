@@ -1,8 +1,8 @@
-Styles in the sass folder should be compiled into cms/static/cms/css with:
+Styles in the sass folder should be compiled into cms/cms_admin_style/static/cms/css with:
 
 ::
 
-     sass --watch cms/cms_admin_style/sass/:cms/static/cms/css/ --style compact
+     sass --watch cms/cms_admin_style/sass/:cms/cms_admin_style/static/cms/css/ --style compact
 
 
 If you keep getting this http://stackoverflow.com/questions/8723475/compass-add-compact-to-css-files try using something like ScoutApp.

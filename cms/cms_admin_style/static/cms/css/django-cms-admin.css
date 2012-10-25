@@ -10,8 +10,8 @@
 /* Template Editor */
 @font-face {
   font-family: 'django-admin-icons';
-  src: url("../../../../static/cms/fonts/django-admin-icons.eot");
-  src: url("../../../../static/cms/fonts/django-admin-icons.eot") format("embedded-opentype"), url("../fonts/django-admin-icons.svg#django-admin-icons") format("svg"), url("../../../../static/cms/fonts/django-admin-icons.woff") format("woff"), url("../../../../static/cms/fonts/django-admin-icons.ttf") format("truetype");
+  src: url("../fonts/django-admin-icons.eot");
+  src: url("../fonts/django-admin-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/django-admin-icons.svg#django-admin-icons") format("svg"), url("../fonts/django-admin-icons.woff") format("woff"), url("../fonts/django-admin-icons.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -283,7 +283,7 @@ html {
 
 /* line 7, ../../../sass/partials/_base.scss */
 body {
-  background: url("../../../../static/cms/images/bg-pattern-light.jpg") #fcfcfc repeat !important;
+  background: url("../images/bg-pattern-light.jpg") #fcfcfc repeat !important;
 }
 
 /* line 9, ../../../sass/partials/_base.scss */
@@ -1288,7 +1288,7 @@ table .row2 {
 
 /* line 90, ../../../sass/partials/_content.scss */
 body.login {
-  background: #fcfcfc url("../../../../static/cms/images/bg-pattern.jpg") repeat !important;
+  background: #fcfcfc url("../images/bg-pattern.jpg") repeat !important;
 }
 /* line 92, ../../../sass/partials/_content.scss */
 body.login #container {
